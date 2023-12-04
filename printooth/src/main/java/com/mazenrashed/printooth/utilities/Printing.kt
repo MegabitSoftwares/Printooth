@@ -45,6 +45,7 @@ class Printing(
     private fun initDeviceCallback() {
         bluetooth.setDeviceCallback(object : DeviceCallback {
             override fun onDeviceConnected(device: BluetoothDevice) {
+                printPrintables()
                 printingCallback?.printingOrderSentSuccessfully()
             }
 
@@ -79,6 +80,7 @@ class Printing(
             bluetooth.send(printer.feedLineCommand.plus(extraLinesAtEnd))
         }
 
+        bluetooth.onStop()
         Handler(Looper.getMainLooper()).postDelayed({
             bluetooth.disconnect()
         }, 2000)
@@ -90,7 +92,5 @@ class Printing(
         bluetooth.onStart()
         if (!bluetooth.isEnabled) bluetooth.enable() else bluetooth.connectToAddress(pairedPrinter.address)
 
-        if (Printooth.hasPairedPrinter())
-            printPrintables()
     }
 }
