@@ -75,6 +75,7 @@ class Printing(private var printer: Printer, private var pairedPrinter: PairedPr
             bluetooth.send(printer.feedLineCommand.plus(extraLinesAtEnd))
         }
 
+        bluetooth.onStop()
         Handler(Looper.getMainLooper()).postDelayed({
             bluetooth.disconnect()
         }, 2000)
