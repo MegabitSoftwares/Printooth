@@ -1,5 +1,5 @@
 # Printooth
-[![](https://jitpack.io/v/mazenrashed/Printooth.svg)](https://jitpack.io/#mazenrashed/Printooth)
+[![](https://jitpack.io/v/MegabitSoftwares/Printooth.svg)](https://jitpack.io/#MegabitSoftwares/Printooth)
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Printooth-green.svg?style=flat )]( https://android-arsenal.com/details/1/7323 )
 
 Printooth aim is to provide a simple abstraction for use the Bluetooth printers regardless of its brand.
@@ -16,7 +16,7 @@ allprojects {
 ### Add dependency
 ```groovy
 dependencies {
-    implementation 'com.github.mazenrashed:Printooth:${LAST_VERSION}'
+    implementation 'com.github.MegabitSoftwares:Printooth:${LAST_VERSION}'
 }
 ```
 ### Add permissions to manifest
