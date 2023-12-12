@@ -35,6 +35,8 @@ open class DefaultPrinter : Printer() {
         val EMPHASIZED_MODE_NORMAL: Byte = 0
         val UNDERLINED_MODE_ON: Byte = 1
         val UNDERLINED_MODE_OFF: Byte = 0
+        val LINE_SPACING_0: Byte = 0
+        val LINE_SPACING_5: Byte = 5
         val LINE_SPACING_60: Byte = 60
         val LINE_SPACING_30: Byte = 30
         val FONT_SIZE_NORMAL: Byte = 0x00
