@@ -38,6 +38,25 @@ open class DefaultPrinter : Printer() {
         val LINE_SPACING_60: Byte = 60
         val LINE_SPACING_30: Byte = 30
         val FONT_SIZE_NORMAL: Byte = 0x00
+        val FONT_SIZE_1: Byte = 0x01
+        val FONT_SIZE_2: Byte = 0x02
+        val FONT_SIZE_3: Byte = 0x03
+        val FONT_SIZE_4: Byte = 0x04
+        val FONT_SIZE_5: Byte = 0x05
+        val FONT_SIZE_6: Byte = 0x06
+        val FONT_SIZE_7: Byte = 0x07
+        val FONT_SIZE_8: Byte = 0x08
+        val FONT_SIZE_9: Byte = 0x09
+        val FONT_SIZE_10: Byte = 0xA
+        val FONT_SIZE_11: Byte = 0xB
+        val FONT_SIZE_12: Byte = 0xC
+        val FONT_SIZE_13: Byte = 0xD
+        val FONT_SIZE_14: Byte = 0xE
+        val FONT_SIZE_15: Byte = 0xF
+        val FONT_SIZE_16: Byte = 0x10
+        val FONT_SIZE_17: Byte = 0x11
+        val FONT_SIZE_18: Byte = 0x12
+        val FONT_SIZE_19: Byte = 0x13
         val FONT_SIZE_LARGE: Byte = 0x10
 
         val CHARCODE_PC437: Byte = 0x00 // USA / Standard Europe
